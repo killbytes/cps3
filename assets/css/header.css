@@ -1,0 +1,114 @@
+.header__mobile {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #d9fff5;
+
+  @media (min-width: 360px) {
+    align-items: normal;
+  }
+  @media (min-width: 1119px) {
+    display: none;
+  }
+}
+header img {
+  cursor: pointer;
+  width: auto;
+}
+
+.header__left,
+.header__right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.header__desctop {
+  display: none;
+}
+.header__desctop {
+  .title {
+    left: -32px;
+  }
+  .title__descr {
+    padding-left: 32px;
+  }
+}
+.header__item-btn {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.btn-call {
+  background-image: url(../images/call.png);
+}
+.btn-messages {
+  background-image: url(../images/chat.png);
+}
+.btn-user {
+  background-image: url(../images/profile.png);
+}
+.btn-settings {
+  background-image: url(../images/repair.png);
+}
+.btn-search {
+  background-image: url(../images/checkstatus.png);
+}
+
+.btn-menu {
+  background-image: url(../images/burger.png);
+}
+.stroke-item {
+  position: relative;
+}
+.header__item a {
+  text-decoration: none;
+  color: inherit;
+}
+.stroke-item:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+}
+
+@media (min-width: 1119px) {
+  .header__desctop {
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 8px;
+    padding: 0 32px;
+    justify-content: space-between;
+  }
+
+  .header__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header__item span {
+    color: #1b1c21;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    -webkit-text-stroke-width: 0.2px;
+  }
+  .header__left,
+  .header__right {
+    gap: 28px;
+  }
+}

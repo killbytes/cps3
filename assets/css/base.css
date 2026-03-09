@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: lakes_my;
+    background-color: #f8f8f8;
+}
+
+p {
+    color: #1b1c21;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.2px;
+
+    @media (min-width: 1119px) {
+        line-height: 20px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+
+    @media (min-width: 767px) {
+        margin-top: 32px;
+    }
+
+    @media (min-width: 1119px) {
+        margin-top: 0px;
+    }
+}
+
+picture {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}

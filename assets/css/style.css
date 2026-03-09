@@ -1,0 +1,53 @@
+@import "fonts.css";
+
+@import "base.css";
+
+@import "container.css";
+
+@import "section.css";
+
+@import "nav.css";
+
+@import "header.css";
+
+@import "breadcrumbs.css";
+
+@import "text-media.css";
+
+@import "read-more.css";
+
+@import "title.css";
+
+@import "brands.css";
+
+@import "card.css";
+
+@import "swiper.css";
+
+.hidden-item {
+  display: none;
+}
+
+.hidden-text {
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .hidden-item {
+    display: block;
+    &:nth-child(3) {
+      margin-right: 20px;
+    }
+  }
+  @media (min-width: 1119px) {
+    margin-top: 18px;
+  }
+}
+
+.hidden-text {
+  display: none;
+  @media (min-width: 1119px) {
+    display: contents;
+  }
+}
+

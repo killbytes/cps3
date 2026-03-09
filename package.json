@@ -1,0 +1,16 @@
+{
+  "name": "cps-project",
+  "version": "1.0.0",
+  "description": "Swiper",
+  "keywords": [
+    "html",
+    "layout",
+    "swiper"
+  ],
+  "author": "killbytes",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "swiper": "^12.1.2"
+  }
+}

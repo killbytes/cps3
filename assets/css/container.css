@@ -1,0 +1,10 @@
+.container {
+  margin: 0 16px;
+
+  @media (min-width: 1119px) {
+    margin: 0 32px;
+    background-color: #f8f8f8;
+    min-width: 1056px;
+    max-width: 1120px;
+  }
+}
